@@ -1,0 +1,5 @@
+Server:Port
+https://hass.domain.com:443
+
+Path
+/api/services/switch/turn_on?api_password=YOURPASSWORD
