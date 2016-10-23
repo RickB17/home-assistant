@@ -1,0 +1,19 @@
+#Note: This is not a complete configuration, only some sections that are used to interact with the garage door controller
+http:
+   api_password: YOURPASSWORD
+
+sensor:
+   platform: command_line
+   command: /scripts/check-state_garage.sh
+   name: garage_door
+
+switch:
+  platform: command_line
+  switches:
+    garage_door:
+      command_on: ssh root@192.168.99.99 /usr/sbin/open_door.sh
+      command_off: ssh root@192.168.99.99 /usr/sbin/close_door.sh
+      friendly_name: Garage Door
+
+group:
+  Garage: switch.garage_door
