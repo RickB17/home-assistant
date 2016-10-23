@@ -4,4 +4,7 @@ https://hass.domain.com:443
 Path
 /api/services/switch/turn_on?api_password=YOURPASSWORD
 
+Data
+{"entity_id": "garage_door", "state": "off"}
+
 You may need to ignore certificates
