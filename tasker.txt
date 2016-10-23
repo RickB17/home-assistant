@@ -5,7 +5,7 @@ Path
 /api/services/switch/turn_on?api_password=YOURPASSWORD
 
 Data
-{"entity_id": "switch.garage_door", "state": "on"}
+{"entity_id": "switch.garage_door"}
 
 Content Type:
 application/json
